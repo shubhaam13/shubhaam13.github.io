@@ -258,13 +258,17 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../img/hero-bg.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
-  overflow: hidden; /* To prevent horizontal overflow on small screens */
 }
 
-/* Stylish background overlay with a gradient */
+@media (min-width: 992px) {
+  #hero {
+    padding-left: 160px;
+  }
+}
+
 #hero:before {
   content: "";
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6));
+  background: rgba(255, 255, 255, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -274,25 +278,22 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 3rem; /* Use 'rem' for relative font sizing */
-  margin-left: 30px;
+  font-size: 64px;
   font-weight: 700;
-  line-height: 1.4; /* Improved readability */
-  color: #333; /* A slightly darker text color for better contrast */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+  line-height: 56px;
+  color: #45505b;
 }
 
 #hero p {
-  color: #555; /* A slightly darker text color for better readability */
+  color: #45505b;
   margin: 15px 0 0 0;
-  font-size: 1.5rem;
+  font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
-  color: #007bff; /* A vibrant blue for span elements */
-  letter-spacing: 2px; /* Increased letter spacing */
-    margin-left: 30px;
+  color: #0563bb;
+  letter-spacing: 1px;
 }
 
 #hero .social-links {
@@ -300,59 +301,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .social-links a {
-  font-size: 2rem;
+  font-size: 24px;
   display: inline-block;
-  color: #333; /* Dark text color */
+  color: #45505b;
+  line-height: 1;
   margin-right: 20px;
-  margin-left: 30px;
   transition: 0.3s;
-  text-decoration: none; /* Remove underlines from links */
 }
 
 #hero .social-links a:hover {
-  color: #007bff; /* Bright blue on hover */
-  transform: scale(1.1); /* Slight scale-up effect */
+  color: #0563bb;
 }
 
-/* Stylish changes for small screens */
 @media (max-width: 992px) {
   #hero {
     text-align: center;
   }
   #hero h1 {
-    font-size: 2rem;
-    line-height: 1.2;
+    font-size: 32px;
+    line-height: 36px;
   }
   #hero p {
     margin-top: 10px;
-    font-size: 1.2rem;
-    line-height: 1.4;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
-/* Add a smooth transition to the background image */
-#hero {
-  transition: background 0.5s ease-in-out;
-}
-
-/* Add a subtle parallax effect on hover */
-#hero:hover {
-  background-position: top center;
-}
-
-/* Add a subtle animation to the background overlay */
-#hero:before {
-  animation: overlayAnimation 8s linear infinite;
-}
-
-@keyframes overlayAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
 
 /*--------------------------------------------------------------
 # Sections General
