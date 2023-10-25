@@ -258,17 +258,13 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../img/hero-bg.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
+  overflow: hidden; /* To prevent horizontal overflow on small screens */
 }
 
-@media (min-width: 992px) {
-  #hero {
-    padding-left: 160px;
-  }
-}
-
+/* Stylish background overlay with a gradient */
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6));
   position: absolute;
   bottom: 0;
   top: 0;
@@ -278,22 +274,23 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 64px;
+  font-size: 3rem; /* Use 'rem' for relative font sizing */
   font-weight: 700;
-  line-height: 56px;
-  color: #45505b;
+  line-height: 1.4; /* Improved readability */
+  color: #333; /* A slightly darker text color for better contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
 }
 
 #hero p {
-  color: #45505b;
+  color: #555; /* A slightly darker text color for better readability */
   margin: 15px 0 0 0;
-  font-size: 26px;
+  font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
-  color: #0563bb;
-  letter-spacing: 1px;
+  color: #007bff; /* A vibrant blue for span elements */
+  letter-spacing: 2px; /* Increased letter spacing */
 }
 
 #hero .social-links {
@@ -301,30 +298,56 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .social-links a {
-  font-size: 24px;
+  font-size: 2rem;
   display: inline-block;
-  color: #45505b;
-  line-height: 1;
+  color: #333; /* Dark text color */
   margin-right: 20px;
   transition: 0.3s;
+  text-decoration: none; /* Remove underlines from links */
 }
 
 #hero .social-links a:hover {
-  color: #0563bb;
+  color: #007bff; /* Bright blue on hover */
+  transform: scale(1.1); /* Slight scale-up effect */
 }
 
+/* Stylish changes for small screens */
 @media (max-width: 992px) {
   #hero {
     text-align: center;
   }
   #hero h1 {
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 2rem;
+    line-height: 1.2;
   }
   #hero p {
     margin-top: 10px;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+}
+
+/* Add a smooth transition to the background image */
+#hero {
+  transition: background 0.5s ease-in-out;
+}
+
+/* Add a subtle parallax effect on hover */
+#hero:hover {
+  background-position: top center;
+}
+
+/* Add a subtle animation to the background overlay */
+#hero:before {
+  animation: overlayAnimation 8s linear infinite;
+}
+
+@keyframes overlayAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
   }
 }
 
