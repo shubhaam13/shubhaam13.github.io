@@ -275,6 +275,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero h1 {
   margin: 0;
   font-size: 3rem; /* Use 'rem' for relative font sizing */
+  margin-left: 20px;
   font-weight: 700;
   line-height: 1.4; /* Improved readability */
   color: #333; /* A slightly darker text color for better contrast */
@@ -302,6 +303,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   color: #333; /* Dark text color */
   margin-right: 20px;
+  margin-left: 20px;
   transition: 0.3s;
   text-decoration: none; /* Remove underlines from links */
 }
