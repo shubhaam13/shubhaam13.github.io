@@ -286,13 +286,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #555; /* A slightly darker text color for better readability */
   margin: 15px 0 0 0;
   font-size: 1.5rem;
-  margin-left: 30px;
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
   color: #007bff; /* A vibrant blue for span elements */
   letter-spacing: 2px; /* Increased letter spacing */
+    margin-left: 30px;
 }
 
 #hero .social-links {
