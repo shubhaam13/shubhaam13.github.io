@@ -165,3 +165,109 @@
   font-size: 14px;
   color: #cbd5e1;
 }
+
+/* =========================
+   CERTS & PROJECTS
+   ========================= */
+.cert-projects {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 32px;
+}
+
+.cert-projects h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #e5e7eb;
+}
+
+.certs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.certs li {
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 10px;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.projects .project {
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.04),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.projects .project strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.projects .project p {
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+/* =========================
+   ACTIONS BAR
+   ========================= */
+.actions {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn.primary {
+  background: #22c55e;
+  color: #022c22;
+  font-weight: 600;
+}
+
+.btn.primary:hover {
+  background: #16a34a;
+}
+
+.btn.secondary {
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #e5e7eb;
+  background:#0077B5;
+  font-weight: 600;
+  
+}
+
+.btn.secondary:hover {
+  background: rgb(13, 131, 209);
+}
+
+.btn.tertiary {
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #e5e7eb;
+  background:rgb(0, 0, 0);
+  font-weight: 600;
+  
+}
+
+.btn.tertiary:hover {
+  background:rgb(15, 12, 12)
+}
