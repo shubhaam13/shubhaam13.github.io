@@ -47,7 +47,7 @@ export default function Dashboard() {
 
       <section className="actions">
   <a
-    href="/Shubham_Kumar_DevOps_SRE.pdf"
+    href="https://drive.google.com/file/d/1kGNH0HzNNReX8OiDfXHL0ACrZ_rmaVnm/view?usp=sharing"
     className="btn primary"
     download
   >
