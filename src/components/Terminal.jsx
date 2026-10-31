@@ -61,26 +61,31 @@ export default function Terminal() {
       case "profile":
         output = "Opening profile section...";
         setActiveSection("profile");
+        document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
         break;
 
       case "skills":
-        output = "Loading skills module...";
+        output = "Opening skills section...";
         setActiveSection("skills");
+        document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" });
         break;
 
       case "experience":
         output = "Opening experience timeline...";
         setActiveSection("experience");
+        document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" });
         break;
 
       case "systems":
-        output = "Loading production systems...";
+        output = "Opening selected projects...";
         setActiveSection("systems");
+        document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
         break;
 
       case "certifications":
         output = "Fetching certifications...";
         setActiveSection("certifications");
+        document.getElementById("certifications")?.scrollIntoView({ behavior: "smooth" });
         break;
 
       case "clear":
@@ -147,6 +152,8 @@ export default function Terminal() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && runCommand()}
+            aria-label="Enter a terminal command"
+            autoComplete="off"
             autoFocus
           />
         </div>

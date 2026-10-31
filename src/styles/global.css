@@ -1,20 +1,7 @@
-* {
-  box-sizing: border-box;
-}
-
-html, body, #root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont;
-  background: #05070d;
-  color: #e6edf3;
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-thumb {
-  background: rgba(255,255,255,0.15);
-  border-radius: 10px;
-}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+body { margin: 0; background: #f5f7f4; color: #263640; font-family: Inter, "Segoe UI", system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+button, a { font: inherit; }
+a { color: inherit; }
+::selection { background: #b7d9d2; color: #101714; }
+:focus-visible { outline: 2px solid #8fc9bd; outline-offset: 3px; }
