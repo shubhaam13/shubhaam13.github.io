@@ -207,3 +207,20 @@ body { background: #f5f7f4; color: #263640; }
   .hero-media-control { top: 10px; right: 10px; }
 }
 @media (max-width: 380px) { .hero { padding-inline: 12px; }.hero h1 { font-size: 45px; }.hero-description { font-size: 11px; }.hero-actions .button { font-size: 9px; } }
+
+/* Expanded experience details from the latest CV */
+.experience-card { align-items: start; }
+.experience-meta p { max-width: 150px; margin: 12px 0 0; color: #60747a; font-size: 11px; line-height: 1.8; }
+.experience-meta p span { color: #287b68; }
+.experience-content { min-width: 0; }
+.experience-content .experience-summary { max-width: 820px; }
+.experience-focus-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; margin-top: 20px; }
+.experience-focus { padding: 17px 18px; border: 1px solid #405c6124; border-radius: 10px; background: #ffffffa8; }
+.experience-focus h4 { margin: 0 0 10px; color: #243944; font-size: 13px; font-weight: 650; }
+.experience-focus ul { margin: 0; padding-left: 17px; color: #52676d; font-size: 11px; line-height: 1.75; }
+.experience-focus li + li { margin-top: 5px; }
+@media (max-width: 680px) {
+  .experience-meta p { max-width: none; margin-top: 7px; }
+  .experience-focus-grid { grid-template-columns: 1fr; gap: 9px; margin-top: 15px; }
+  .experience-focus { padding: 15px; }
+}
